@@ -1,8 +1,11 @@
 import React from 'react'
+import Background from '../components/UI/Background'
 
 function About() {
   return (
-    <div>About</div>
+    <Background>
+        <p>hi!</p>
+    </Background>
   )
 }
 
