@@ -19,7 +19,7 @@ function User({ users }) {
   return (
     <Background>
     <section className="container mx-auto px-4 flex flex-col items-center">
-      <article className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden flex flex-col p-4 mx-auto w-full md:w-3/4 lg:w-1/2 mb-4">
+      <article className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden flex flex-col p-4 mx-auto w-full md:w-3/4 lg:w-1/2 mb-4 bg-white">
         <div className="flex items-center">
           <img
             className="flex-none rounded-full h-20 w-20 md:h-28 md:w-28"
