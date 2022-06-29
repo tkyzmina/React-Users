@@ -14,7 +14,7 @@ function App() {
   const fetchUsers = async () => {
     try {
       const response = await authFetch(
-        "/?results=30&inc=name,picture,location,dob,registered&noinfo"
+        "/?results=20&inc=name,picture,location,dob,registered&noinfo"
       );
       const data = response.data.results;
       setUsers(data);
