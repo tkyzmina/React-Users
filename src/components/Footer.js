@@ -10,7 +10,7 @@ function Footer() {
           href="https://github.com/tkyzmina"
         >
           <VscGithub className="w-6 h-6" />
-          <span class="sr-only">My GitHub</span>
+          <span className="sr-only">My GitHub</span>
         </a>
         <p>Tatyana Kyzmina, 2022.</p>
       </div>

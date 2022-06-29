@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Users from "./pages/Users";
 import About from "./pages/About";
 import User from "./pages/User";
+import Footer from "./components/Footer";
 
 function App() {
   const [users, setUsers] = useState([]);
