@@ -16,7 +16,7 @@ function Users({ users }) {
                   src={user.picture.medium}
                   alt={`${user.name.first} ${user.name.last}`}
                 />
-                <div className="ml-4 flex-auto">
+                <div className="mx-2 flex-auto ">
                   <h3 className="font-medium">{`${user.name.first} ${user.name.last}`}</h3>
                   <p className="mt-1 text-slate-500">{user.location.country}</p>
                 </div>{" "}
