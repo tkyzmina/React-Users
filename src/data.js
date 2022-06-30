@@ -1,3 +1,17 @@
+const infoTab = [
+  {
+    id: 1,
+    title: "Technologies",
+    text: "React, React Router, Axios, Tailwind.",
+  },
+  {
+    id: 2,
+    title: "Goals",
+    text: "This project was made following to React Tutorial Course by John Smilga on Udemy. Main goals were to use React router with shared routes and Axios library. Design ideas from Tailwind css.",
+  },
+  { id: 3, title: "API", text: "Data loads from randomuser.me Api." },
+];
+
 const usersStatic = {
   results: [
     {
@@ -1143,4 +1157,4 @@ const usersStatic = {
   ],
 };
 
-export default usersStatic;
+export  {usersStatic, infoTab};

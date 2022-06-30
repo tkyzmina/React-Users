@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Background from "../components/UI/Background";
+import Card from "../components/UI/Card";
 
 function Users({ users }) {
   return (
@@ -8,10 +9,7 @@ function Users({ users }) {
       <section className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3">
         {users.map((user) => {
           return (
-            <article
-              className="rounded-lg bg-white text-[0.8125rem] leading-5 text-slate-900 shadow-xl shadow-black/5 ring-1 ring-slate-700/10"
-              key={user.dob.date}
-            >
+            <Card key={user.dob.date} classStyle="p-2">
               <div className="flex items-center p-2 md:p-4">
                 <img
                   className="h-10 w-10 flex-none rounded-full md:h-20 md:w-20"
@@ -29,7 +27,7 @@ function Users({ users }) {
                   More info
                 </Link>
               </div>
-            </article>
+            </Card>
           );
         })}
       </section>

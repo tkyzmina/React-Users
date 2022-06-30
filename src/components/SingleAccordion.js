@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { VscAdd,VscChromeMinimize } from "react-icons/vsc";
+import { VscAdd, VscChromeMinimize } from "react-icons/vsc";
+import Card from "./UI/Card";
 
 function SingleAccordion({ title, text }) {
   const [show, setShow] = useState(false);
   console.log(show);
   return (
-    <li className="flex flex-col rounded-lg bg-white p-2 text-base shadow-xl shadow-black/5 ring-1 ring-slate-700/10  mb-4">
+    <Card classStyle="mb-4 p-2">
       <div className="flex items-center justify-between">
         <p className="font-semibold">{title}</p>
         <button
@@ -15,11 +16,11 @@ function SingleAccordion({ title, text }) {
             setShow(!show);
           }}
         >
-            {!show ? <VscAdd/> : <VscChromeMinimize/> }          
+          {!show ? <VscAdd /> : <VscChromeMinimize />}
         </button>
       </div>
       {show && <p className="py-3">{text}</p>}
-    </li>
+    </Card>
   );
 }
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import authFetch from "./axios/custom";
 
 import SharedLayout from "./pages/SharedLayout";
@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import Users from "./pages/Users";
 import About from "./pages/About";
 import User from "./pages/User";
-import Footer from "./components/Footer";
 
 function App() {
   const [users, setUsers] = useState([]);
