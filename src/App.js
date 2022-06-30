@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Users from "./pages/Users";
 import About from "./pages/About";
 import User from "./pages/User";
+import SharedUsersLayot from "./pages/SharedUsersLayot";
+import Error from "./pages/Error";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -32,9 +34,14 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
-          <Route path="users" element={<Users users={users} />} />
-          <Route path="users/:name" element={<User users={users} />} />
+
+          <Route path="users" element={<SharedUsersLayot />}>
+            <Route index element={<Users users={users} />} />
+            <Route path=":name" element={<User users={users} />} />
+          </Route>
+
           <Route path="about" element={<About />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </BrowserRouter>
