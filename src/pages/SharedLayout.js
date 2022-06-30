@@ -8,7 +8,9 @@ function SharedLayout() {
     <>
       <div className="wrapper flex flex-col h-screen">
         <NavBar />
-        <Outlet />
+        <main>
+          <Outlet />
+        </main>
         <Footer />
       </div>
     </>
